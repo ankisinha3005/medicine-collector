@@ -1,0 +1,16 @@
+server.port: 7090
+
+spring:
+  datasource:
+    dataSourceClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/medicine_master
+    username: root
+    password: password
+  jpa:
+    showSql: true
+    hibernate:
+      ddlAuto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
